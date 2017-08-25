@@ -1,0 +1,47 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+
+}
+
+.info-civile {
+	position: relative;
+	margin: 5vh 5vw 10vh 5vw;
+	height: 10vw;
+	width: 89vw;
+}
+
+.myFace {
+	position: absolute;
+	top: 0;
+	left: calc(100% - 10vw);
+	height: 10vw;
+	width: 10vw;
+}
+
+.intitule {
+	width: 100vw;
+	text-align: center;
+}
+
+.savoir-faire {
+	position: relative;
+	width: 90vw;
+	margin: 0 5vw;
+	margin: auto;
+}
+
+.skills-box {
+	width: 45%;
+	display: inline-block;
+	margin: 0;
+	border: 1px solid black;
+	margin: auto;
+}
+
+.skills-box h3 {
+	width: 100%;
+	text-align: center;
+}
