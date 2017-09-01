@@ -1,40 +1,59 @@
 * {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-
+	--heightByVw: calc(1vw * (21 / 29.7));
+	height: calc(var(--heightByVw) * 100);
+	--fullWidth: 90vw;
+	--infoTop: 10vh;
+	--infoHeight: calc(10 * var(--heightByVw));
+	--titreTop: calc(var(--infoTop) + var(--infoHeight) + 5 * var(--heightByVw));
+	--titreHeight: calc(var(--heightByVw) * 5);
+	--savoirFaireTop: calc(var(--titreTop) + var(--titreHeight) + 5 * var(--heightByVw));
 }
 
 .info-civile {
-	position: relative;
-	margin: 5vh 5vw 10vh 5vw;
-	height: 10vw;
-	width: 89vw;
+	position: absolute;
+	top: 10vh;
+	left: 5vw;
+	height: calc(var(--heightByVw) * 10);
+	width: 90vw;
 }
 
 .myFace {
 	position: absolute;
 	top: 0;
-	left: calc(100% - 10vw);
-	height: 10vw;
-	width: 10vw;
+	right: 0;
+	height: var(--infoHeight);
+	width: var(--infoHeight);
 }
 
 .intitule {
-	width: 100vw;
+	position: absolute;
+	top: var(--titreTop);
+	left: 5vw;
+	width: 90vw;
 	text-align: center;
 }
 
-.savoir-faire {
+.container {
 	position: relative;
-	width: 90vw;
-	margin: 0 5vw;
-	margin: auto;
+	display: block;
+}
+
+.savoir-faire {
+	position: absolute;
+	top: var(--savoirFaireTop);
+	left: 5vw;
 }
 
 .skills-box {
-	width: 45%;
+	position: relative;
+	top: 0;
+	width: calc(var(--fullWidth) / 2 - 5%);
 	display: inline-block;
 	margin: 0;
 	border: 1px solid black;
@@ -44,4 +63,19 @@ body {
 .skills-box h3 {
 	width: 100%;
 	text-align: center;
+}
+
+.hard-skills {
+	position: absolute;
+	left: 0;
+}
+
+.hard-skills ul {
+	position: relative;
+	left: 5%;
+}
+
+.soft-skills {
+	position: absolute;
+	left: calc(var(--fullWidth) / 2 + 5%);
 }
