@@ -1,0 +1,38 @@
+nav {
+	padding-top: 20.65vh;
+	padding-left: 13.54vw;
+	width: 26vw;
+}
+
+nav a {
+	text-transform: uppercase;
+	text-decoration: none;
+	line-height: 2em;
+	font-size: 1em;
+	padding: 4px;
+}
+
+nav a:visited, nav a:link, nav a:active {
+	color: black;
+	outline-style: none;
+}
+
+nav a:hover {
+	border-radius: 0.5em;
+}
+
+nav a:first-child:hover {
+	background-color: #F2C94C;
+}
+
+nav a:nth-child(3):hover {
+	background-color: #27AE60;
+}
+
+nav a:nth-child(5):hover {
+	background-color: #9B51E0;
+}
+
+nav a:last-child:hover {
+	background-color: #56CCF2;
+}
