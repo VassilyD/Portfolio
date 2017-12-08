@@ -36,3 +36,12 @@ nav a:nth-child(5):hover {
 nav a:last-child:hover {
 	background-color: #56CCF2;
 }
+
+.container-main {
+	display: inline-block;
+	font-size: 0.8em;
+}
+
+.container-main ul li {
+	padding: 5px 0;
+}
