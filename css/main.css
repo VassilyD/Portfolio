@@ -1,4 +1,5 @@
 nav {
+	display: inline-block;
 	padding-top: 20.65vh;
 	padding-left: 13.54vw;
 	width: 26vw;
@@ -39,9 +40,13 @@ nav a:last-child:hover {
 
 .container-main {
 	display: inline-block;
+	position: relative;
+	top: 10vh;
+	left: 10vw;
 	font-size: 0.8em;
 }
 
 .container-main ul li {
 	padding: 5px 0;
+	list-style: none;
 }
