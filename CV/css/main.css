@@ -12,9 +12,10 @@ body {
 	--infoHeight: calc(10 * var(--heightByVw));
 	--titreTop: calc(var(--infoTop) + var(--infoHeight) + 5 * var(--heightByVw));
 	--titreHeight: calc(var(--heightByVw) * 5);
-	--savoirFaireTop: calc(var(--titreTop) + var(--titreHeight) + 5 * var(--heightByVw));
+	--savoirFaireTop: calc(var(--titreTop) + var(--titreHeight) + 25 * var(--heightByVw));
+	--experienceTop: calc(var(--titreTop) + var(--titreHeight) + 5 * var(--heightByVw));
 }
-
+/*
 .info-civile {
 	position: absolute;
 	top: 10vh;
@@ -79,3 +80,19 @@ body {
 	position: absolute;
 	left: calc(var(--fullWidth) / 2 + 5%);
 }
+
+.left-box, .right-box {
+	display: inline-block;
+}
+
+div.experience {
+	position: absolute;
+	top: var(--experienceTop);
+}
+
+.left-box {
+	margin-top: 0;
+	position: relative;
+	top: 0;
+}
+*/
